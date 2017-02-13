@@ -19,6 +19,11 @@ footer{
 	display: block;
 	margin: auto; 
 }
+li{
+	font-size: 16px;
+	display: inline-block;
+	padding: 0 20px;
+}
 nav .topmenu {
     text-align: center;
     margin: 0px auto;
@@ -53,25 +58,33 @@ aside{
 	background-color: blue;	
 	width: 3em;
 	height: 3em;
+	line-height: 3em;
+	text-align: center;
 	order: 1;
 }
 .box a{
 	color: white;
 	text-decoration: none;
 	width: 2em;
+	text-align: center;
 	height: 2em;
+	line-height: 2em;
 	line-height: 2em;
 	font-family: arial;
 }
 .lblar{
 	background-color: lightblue;
 	width: 3em;
+	text-align: center;
 	height: 3em;
+	line-height: 3em;
 	order: 2;
 }
 .appgulur{
 	background-color: orange;
 	width: 3em;
+	line-height: 3em;
+	text-align: center;
 	height: 3em;
 	order: 3;
 }
@@ -79,11 +92,14 @@ aside{
 	background-color: orangered;
 	width: 3em;
 	height: 3em;
+	text-align: center;
+	line-height: 3em;
 	order: 4;
 }
 .box{
 	position: fixed;
 	display: flex;
+	line-height: 3em;
 	left: 0;
 	top: 0;
 	flex-flow:column;

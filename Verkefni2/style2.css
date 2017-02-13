@@ -1,3 +1,6 @@
+*{
+	font-family: arial;
+}
 body{
 	max-width: 60em;
 	margin: 0 auto;
@@ -24,6 +27,22 @@ nav .topmenu {
     margin: 0px auto;
     background-color: darkorchid;
 }
+li{
+	font-size: 16px;
+	width: 100%;
+	display: inline-block;
+	padding: 0 20px;
+}
+li a {
+	text-decoration: none;
+	color: white;
+}
+li:last-child{
+	margin-bottom: 100px;
+}
+li:hover{
+	background-color: red;
+}
 .order1{
 	background-color: cyan;
 	order:1;
@@ -42,7 +61,7 @@ nav .topmenu {
 section{
 
 	flex-flow: column;
-}c
+}
 article{
 	padding: 1em;
 }
@@ -53,25 +72,33 @@ aside{
 	background-color: blue;	
 	width: 3em;
 	height: 3em;
+	line-height: 3em;
+	text-align: center;
 	order: 1;
 }
 .box a{
 	color: white;
 	text-decoration: none;
 	width: 2em;
+	text-align: center;
 	height: 2em;
+	line-height: 2em;
 	line-height: 2em;
 	font-family: arial;
 }
 .lblar{
 	background-color: lightblue;
 	width: 3em;
+	text-align: center;
 	height: 3em;
+	line-height: 3em;
 	order: 2;
 }
 .appgulur{
 	background-color: orange;
 	width: 3em;
+	line-height: 3em;
+	text-align: center;
 	height: 3em;
 	order: 3;
 }
@@ -79,12 +106,51 @@ aside{
 	background-color: orangered;
 	width: 3em;
 	height: 3em;
+	text-align: center;
+	line-height: 3em;
 	order: 4;
 }
 .box{
-	position: fixed;
 	display: flex;
+	flex-flow: row;
+}
+.fixed{
+	position: fixed;
 	left: 0;
 	top: 0;
 	flex-flow:row;
+
+}
+input{
+	display: none;
+}
+label{
+	position: fixed;
+	bottom: 0;
+	left:0;
+	text-align: center;
+	width: 100%;
+	padding: 20px;
+	background-color: black;
+	color:white;
+	z-index: 999;
+}
+label:hover{
+	cursor: pointer;
+}
+.topmenu {
+    position: fixed;
+    left: 0;
+    bottom: -10em;
+    overflow: hidden;
+    z-index: 990;
+    width: 100%;
+    padding:0;
+    background-color: blue;
+    transition: all 0.4s ease;
+}
+input[type=checkbox]:checked ~ .topmenu {
+    position: fixed;
+    bottom: -2.4em;
+    transition: all 0.4s ease;
 }
